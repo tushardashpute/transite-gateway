@@ -64,6 +64,26 @@ Follow the same process for remaining two VPC's.
 <img width="1503" alt="image" src="https://user-images.githubusercontent.com/74225291/165966751-85e0a4f9-a2a3-4984-acc1-8d55639cd9e0.png">
 
 
-6. Now will add 
+6. Now will add Route Table entry for all 3 vpc Transit Gateway in respective VPC's private subnet route table.
+
+ <img width="1308" alt="image" src="https://user-images.githubusercontent.com/74225291/165976999-9eac844e-0cde-44b1-a054-b9ad09456818.png">
+
+For now we have added route from VPC1 to VPC2 and in VPC2 to VPC1
+
+<img width="1205" alt="image" src="https://user-images.githubusercontent.com/74225291/165978414-64aa2b01-5a35-41f3-a315-089f87bbb026.png">
+
+Now connect to private EC2 instance in VPC1 using session manager and try to do ssh.
+In the initial check I have not added route so it was giving timeout, later I added route then its started working.
+
+<img width="713" alt="image" src="https://user-images.githubusercontent.com/74225291/165985518-164935eb-ddd1-4028-a616-fee47032a397.png">
+
+Currently we dont have route from VPC2 to VPC3 so if we try to do ssh from vpc2 to vpc3 EC2 instance we should get error.
+
+<img width="1240" alt="image" src="https://user-images.githubusercontent.com/74225291/165986783-cfd69abf-59b0-498c-8c97-6283d88d998e.png">
+
+
+Now add the routes as below for all VPC's.
+
+![image](https://user-images.githubusercontent.com/74225291/165986941-e59d54c7-8390-4f55-b00f-bda0c1301b16.png)
 
 
