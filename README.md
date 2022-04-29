@@ -1,5 +1,4 @@
-# transite-gateway
-transite-gateway
+# transit-gateway
 
 Without Transit Gateway
 
