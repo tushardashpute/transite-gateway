@@ -24,9 +24,9 @@ Demo Setup:
 
 1. Create 3 VPC's and public and private subnets using below cloud formation tempalates.
 
-aws cloudformation --region us-east-2 create-stack --stack-name vpc1 --template-body file://vpc1_cfn.yaml
-aws cloudformation --region us-east-2 create-stack --stack-name vpc2 --template-body file://vpc2_cfn.yaml
-aws cloudformation --region us-east-2 create-stack --stack-name vpc3 --template-body file://vpc3_cfn.yaml
+	aws cloudformation --region us-east-2 create-stack --stack-name vpc1 --template-body file://vpc1_cfn.yaml
+	aws cloudformation --region us-east-2 create-stack --stack-name vpc2 --template-body file://vpc2_cfn.yaml
+	aws cloudformation --region us-east-2 create-stack --stack-name vpc3 --template-body file://vpc3_cfn.yaml
 
 2. Now create EC2 instance in each VPC's private subnet.
 	
