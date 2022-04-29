@@ -20,10 +20,10 @@ Here we are doing the setup of Transite gateway on same aws account across three
 Demo Setup:
 
 
-	VPC1	VPC2	VPC3
-CIDR	10.1.0.0/16	10.2.0.0/16	10.3.0.0/16
-Public Subnet	10.1.0.0/20	10.2.0.0/20	10.3.0.0/20
-Private Subnet	10.1.10.0/24	10.2.10.0/24	10.3.10.0/24
+					VPC1		VPC2		VPC3
+			CIDR		10.1.0.0/16	10.2.0.0/16	10.3.0.0/16
+			Public Subnet	10.1.0.0/20	10.2.0.0/20	10.3.0.0/20
+			Private Subnet	10.1.10.0/24	10.2.10.0/24	10.3.10.0/24
 
 <img width="396" alt="image" src="https://user-images.githubusercontent.com/74225291/165944695-5c42ceba-0c20-4802-9e7f-f8488e0e9ee3.png">
 
